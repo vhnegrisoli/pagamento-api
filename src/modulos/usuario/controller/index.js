@@ -46,12 +46,10 @@ class UsuarioController {
         const token = jwt.sign({ usuarioAutenticado }, auth.key, {
           expiresIn: '1d',
         });
-        console.log('Cheguei');
         return res.json(token);
       }
       return res.status(403).json({ message: 'Usuário ou senha inválidos.' });
     } catch (error) {
-      console.log(error);
       return res.status(400).json(error);
     }
   }
