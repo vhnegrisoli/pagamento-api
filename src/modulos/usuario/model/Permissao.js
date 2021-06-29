@@ -2,26 +2,17 @@ import Sequelize from "sequelize";
 
 import sequelize from "../../../config/db/index";
 
-const Usuario = sequelize.define(
-  "usuario",
+const Permissao = sequelize.define(
+  "permissao",
   {
     id: {
       type: Sequelize.INTEGER,
       primaryKey: true,
       autoIncrement: true,
     },
-    nome: {
+    descricao: {
       type: Sequelize.STRING,
       allowNull: false,
-    },
-    email: {
-      type: Sequelize.STRING,
-    },
-    senha: {
-      type: Sequelize.STRING,
-    },
-    data_cadastro: {
-      type: Sequelize.STRING,
     },
   },
   {
@@ -29,4 +20,4 @@ const Usuario = sequelize.define(
   }
 );
 
-export default Usuario;
+export default Permissao;
