@@ -37,8 +37,6 @@ yarn
 yarn dev
 ```
 
-Ou então:
-
 A aplicação estará disponível em:
 
 ```
