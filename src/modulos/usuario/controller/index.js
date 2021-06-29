@@ -35,7 +35,6 @@ class UsuarioController {
         where: {
           id,
         },
-        //include: Permissao,
       });
       if (usuario) {
         let p = await usuario.getPermissaos();
